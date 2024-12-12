@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foreback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/fore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cameracount"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="87dp"
+        android:text="Foreground" />
+
+    <CheckBox
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-31dp"
+        android:layout_marginEnd="19dp"
+        android:text="Background" />
+
+    <EditText
+        android:id="@+id/cameracount"
+        android:layout_width="151dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="16dp"
+        android:hint="cameracount"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/accesscamera"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#8BC34A"
+        android:text="access" />
+
+    <EditText
+        android:id="@+id/microphonecount"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/cameracount"
+        android:hint="microphonecount"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/locationcount"
+        android:layout_width="174dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/microphonecount"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="6dp"
+        android:hint="locationcount"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/accessTextView"
+        android:layout_width="367dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/accesscamera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:padding="16dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/resultTextView"
+        android:layout_width="336dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/accessTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="-1dp"
+        android:padding="16dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:background="#8BC34A"
+        android:text="predict" />
+
+    <Button
+        android:id="@+id/stopservice"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTextView"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/predictButton"
+        android:background="#F44336"
+        android:text="stopservice" />
+</RelativeLayout>
